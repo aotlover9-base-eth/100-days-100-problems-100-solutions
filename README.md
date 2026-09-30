@@ -22,13 +22,8 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | **003** | *To be announced* | — | — | Upcoming |
 | **004** | *To be announced* | — | — | Upcoming |
 | **005** | *To be announced* | — | — | Upcoming |
-| **006** | *To be announced* | — | — | Upcoming |
-| **007** | *To be announced* | — | — | Upcoming |
-| **008** | *To be announced* | — | — | Upcoming |
-| **009** | *To be announced* | — | — | Upcoming |
-| **010** | *To be announced* | — | — | Upcoming |
 
-*(Days 011 through 100 will be populated daily as solutions are published.)*
+*(Days 006 through 100 will be populated daily as solutions are published.)*
 
 ---
 
