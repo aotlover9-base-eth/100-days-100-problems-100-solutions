@@ -18,7 +18,7 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | Day | Problem Description | Repository / Solution | Tech Stack | Status |
 |:---:|:---|:---|:---|:---:|
 | **001** | Opening `.docx`, `.pptx`, `.xlsx` on Linux without a full office suite or cloud uploads | [**docx-to-pdf-viewer**](https://github.com/aotlover9-base-eth/docx-to-pdf-viewer) | Python, Bash, LibreOffice Headless, Zenity, Evince, XDG | Completed |
-| **002** | Hands-free scrolling of Reels & Shorts using Bluetooth earbuds touch controls | [**airscroll**](https://github.com/aotlover9-base-eth/airscroll) | Android (Kotlin), AccessibilityService, Gestures, Bluetooth AVRCP | Completed |
+| **002** | Accidentally leaking API keys, credentials, and PII in screenshots shared on X/GitHub | [**maskshot**](https://github.com/aotlover9-base-eth/maskshot) | Python 3.11+, Tesseract OCR, Pillow, Wayland/X11, Rich, Watchdog | Completed |
 | **003** | *To be announced* | — | — | Upcoming |
 | **004** | *To be announced* | — | — | Upcoming |
 | **005** | *To be announced* | — | — | Upcoming |
@@ -37,14 +37,14 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - Headless conversion via native or Flatpak LibreOffice.
   - Automatic XDG MIME type registration.
 
-### Day 2: [AirScroll (`airscroll`)](https://github.com/aotlover9-base-eth/airscroll)
-- **Problem**: When eating food, cooking, working out, or relaxing in bed, swiping on the screen to scroll through Instagram Reels or YouTube Shorts is inconvenient and messy.
-- **Solution**: An Android utility that captures Bluetooth media key signals from your earbuds (Redmi Buds, Galaxy Buds, etc.) and translates them into native screen gestures.
+### Day 2: [Screenshot & Clipboard Secret Sanitizer (`maskshot`)](https://github.com/aotlover9-base-eth/maskshot)
+- **Problem**: Sharing code screenshots, terminal error logs, or dashboard captures on X, GitHub, or Discord risks accidentally leaking live API keys (`sk-...`, `ghp_...`, `AKIA...`), database credentials, private IPs, or emails.
+- **Solution**: A 100% offline, local CLI and clipboard utility that scans screenshots with Tesseract OCR, detects sensitive tokens and credentials, and redacts them in <300ms using blur, pixelation, or blackout masks.
 - **Key Features**:
-  - Double Tap Right: Next Reel/Short (Swipe Up).
-  - Double Tap Left: Previous Reel (Swipe Down).
-  - Triple Tap: Instant Like (Simulates double-tap on screen center ❤️).
-  - Smart app filtering: Only activates when Instagram, YouTube, or TikTok is in the foreground, leaving Spotify/music playback unaffected.
+  - `maskshot clip`: Instantly sanitizes clipboard image with a single hotkey and updates clipboard with desktop notification.
+  - `maskshot sanitize`: Redacts files with Gaussian Blur, Retro Pixelate, or Badge Blackout styles.
+  - `maskshot watch`: Background daemon automatically sanitizing screenshot folders.
+  - Zero cloud reliance: 100% local OCR & image processing, zero API fees, zero risk of data leaking to external servers.
 
 ---
 
