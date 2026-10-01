@@ -18,7 +18,7 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | Day | Problem Description | Repository / Solution | Tech Stack | Status |
 |:---:|:---|:---|:---|:---:|
 | **001** | Opening `.docx`, `.pptx`, `.xlsx` on Linux without a full office suite or cloud uploads | [**docx-to-pdf-viewer**](https://github.com/aotlover9-base-eth/docx-to-pdf-viewer) | Python, Bash, LibreOffice Headless, Zenity, Evince, XDG | Completed |
-| **002** | *To be announced* | — | — | In Progress |
+| **002** | Hands-free scrolling of Reels & Shorts using Bluetooth earbuds touch controls | [**airscroll**](https://github.com/aotlover9-base-eth/airscroll) | Android (Kotlin), AccessibilityService, Gestures, Bluetooth AVRCP | Completed |
 | **003** | *To be announced* | — | — | Upcoming |
 | **004** | *To be announced* | — | — | Upcoming |
 | **005** | *To be announced* | — | — | Upcoming |
@@ -36,6 +36,15 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - SHA-256 caching layer for instant (<0.15s) re-opening.
   - Headless conversion via native or Flatpak LibreOffice.
   - Automatic XDG MIME type registration.
+
+### Day 2: [AirScroll (`airscroll`)](https://github.com/aotlover9-base-eth/airscroll)
+- **Problem**: When eating food, cooking, working out, or relaxing in bed, swiping on the screen to scroll through Instagram Reels or YouTube Shorts is inconvenient and messy.
+- **Solution**: An Android utility that captures Bluetooth media key signals from your earbuds (Redmi Buds, Galaxy Buds, etc.) and translates them into native screen gestures.
+- **Key Features**:
+  - Double Tap Right: Next Reel/Short (Swipe Up).
+  - Double Tap Left: Previous Reel (Swipe Down).
+  - Triple Tap: Instant Like (Simulates double-tap on screen center ❤️).
+  - Smart app filtering: Only activates when Instagram, YouTube, or TikTok is in the foreground, leaving Spotify/music playback unaffected.
 
 ---
 
