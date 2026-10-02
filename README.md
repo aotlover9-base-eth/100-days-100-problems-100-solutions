@@ -48,13 +48,13 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 
 ### Day 3: [Linux Audio & Bluetooth Auto-Switcher, Per-App Mixer & DSP Effects (`pipeswitch`)](https://github.com/aotlover9-base-eth/pipeswitch)
 - **Problem**: On Linux (PipeWire / PulseAudio), Bluetooth headphones often degrade to low-quality mono phone call mode (HFP), disconnecting devices leaves apps silently playing to dead/virtual sinks, and redirecting individual app audio or applying clean acoustic EQ requires complex terminal commands.
-- **Solution**: A fast native GNOME Libadwaita utility and Rich CLI that automatically locks Bluetooth to A2DP high fidelity, provides per-app volume and dynamic output routing, includes a 6-band parametric EQ with acoustic presets, and offers 1-click sound diagnostic and rescue.
+- **Solution**: A peak-interactive terminal user interface (TUI) with full mouse support and Rich CLI that automatically locks Bluetooth to A2DP high fidelity, provides per-app volume and dynamic output routing, includes a 6-band parametric EQ with acoustic presets, and offers 1-click sound diagnostic and rescue.
 - **Key Features**:
   - **Auto-Switch & Codec Lock**: Real-time event daemon auto-switches to connected headsets and locks to high-fidelity stereo with desktop alerts.
-  - **Per-App Mixer**: Real-time volume sliders (up to 150% boost) and dynamic output destination dropdowns per running application.
+  - **Per-App Mixer**: Real-time volume controls (up to 150% boost) and dynamic output destination routing per running application.
   - **DSP Audio Effects & 6-Band EQ**: Powered by PipeWire filter-chains with presets for Bass Boost, Vocal Clarity, Dynamic V-Curve, and 3D Virtual Spatializer.
   - **1-Click Audio Rescue**: Instant stream diagnostic, un-mute, and recovery for muted or stranded applications.
-  - **Dual Frontend**: Native GNOME Libadwaita dark-mode interface + Rich CLI.
+  - **Interactive Terminal Console**: Zero-bloat Textual TUI with full mouse clicking, sliders, tabs, and live PipeWire hardware sync.
 
 ---
 
