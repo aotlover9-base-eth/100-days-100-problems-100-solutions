@@ -19,8 +19,8 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 |:---:|:---|:---|:---|:---:|
 | **001** | Opening `.docx`, `.pptx`, `.xlsx` on Linux without a full office suite or cloud uploads | [**docx-to-pdf-viewer**](https://github.com/aotlover9-base-eth/docx-to-pdf-viewer) | Python, Bash, LibreOffice Headless, Zenity, Evince, XDG | Completed |
 | **002** | Accidentally leaking API keys, credentials, and PII in screenshots shared on X/GitHub | [**maskshot**](https://github.com/aotlover9-base-eth/maskshot) | Python 3.11+, Tesseract OCR, Pillow, Wayland/X11, Rich, Watchdog | Completed |
-| **003** | Bluetooth headset profile downgrades (HFP mono), orphaned audio streams & missing per-app mixer | [**pipeswitch**](https://github.com/aotlover9-base-eth/pipeswitch) | Python 3.10+, GTK 4, Libadwaita, PipeWire Filter-Chain DSP, WirePlumber, Rich | Completed |
-| **004** | *To be announced* | — | — | Upcoming |
+| **003** | Bluetooth headset profile downgrades (HFP mono), orphaned audio streams & missing per-app mixer | [**pipeswitch**](https://github.com/aotlover9-base-eth/pipeswitch) | Python 3.10+, Textual TUI, PipeWire Filter-Chain DSP, WirePlumber, Rich | Completed |
+| **004** | Sharing clipboard, tokens, files, or photos between Linux and phone on local WiFi without cloud leaks | [**clipshare**](https://github.com/aotlover9-base-eth/clipshare) | Python 3.10+, qrcode, Rich, HTTP Threading Server, HTML5/CSS Mobile Web | Completed |
 | **005** | *To be announced* | — | — | Upcoming |
 
 *(Days 006 through 100 will be populated daily as solutions are published.)*
@@ -55,6 +55,16 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - **DSP Audio Effects & 6-Band EQ**: Powered by PipeWire filter-chains with presets for Bass Boost, Vocal Clarity, Dynamic V-Curve, and 3D Virtual Spatializer.
   - **1-Click Audio Rescue**: Instant stream diagnostic, un-mute, and recovery for muted or stranded applications.
   - **Interactive Terminal Console**: Zero-bloat Textual TUI with full mouse clicking, sliders, tabs, and live PipeWire hardware sync.
+
+### Day 4: [Local LAN P2P Clipboard & File Share via QR Code (`clipshare`)](https://github.com/aotlover9-base-eth/clipshare)
+- **Problem**: Transferring code snippets, API keys, passwords, or files between a Linux terminal and a smartphone usually requires messaging yourself on WhatsApp/Telegram/Discord (exposing private tokens to cloud platforms) or setting up bulky tools.
+- **Solution**: A 1-command micro-utility that discovers local WiFi LAN IP, serves clipboard contents or files over an ephemeral local HTTP server, and renders a scannable ASCII QR code directly in the terminal.
+- **Key Features**:
+  - **Terminal ASCII QR Code**: Instant high-contrast half-block QR code scannable directly with smartphone cameras.
+  - **Multi-Source Ingestion**: Shares Wayland/X11 clipboard, files, auto-compressed directories, piped stdin, or text strings.
+  - **Obsidian Dark Mobile Web UI**: Responsive mobile receiver with 1-tap copy to phone clipboard and file previews.
+  - **Bi-Directional Dropzone**: Upload photos or files from phone camera directly into `~/Downloads/clipshare/` on the PC.
+  - **Ephemeral & Auto-Shutdown**: Automatic server termination after transfer or 120s timeout. Zero cloud servers.
 
 ---
 
