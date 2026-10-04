@@ -21,9 +21,10 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | **002** | Accidentally leaking API keys, credentials, and PII in screenshots shared on X/GitHub | [**maskshot**](https://github.com/aotlover9-base-eth/maskshot) | Python 3.11+, Tesseract OCR, Pillow, Wayland/X11, Rich, Watchdog | Completed |
 | **003** | Bluetooth headset profile downgrades (HFP mono), orphaned audio streams & missing per-app mixer | [**pipeswitch**](https://github.com/aotlover9-base-eth/pipeswitch) | Python 3.10+, Textual TUI, PipeWire Filter-Chain DSP, WirePlumber, Rich | Completed |
 | **004** | Sharing clipboard, tokens, files, or photos between Linux and phone on local WiFi without cloud leaks | [**clipshare**](https://github.com/aotlover9-base-eth/clipshare) | Python 3.10+, qrcode, Rich, HTTP Threading Server, HTML5/CSS Mobile Web | Completed |
-| **005** | *To be announced* | — | — | Upcoming |
+| **005** | Downloading videos, audio, image galleries, and text from social posts without ad spam or compression | [**omniget**](https://github.com/aotlover9-base-eth/omniget) | Python 3.10+, Textual TUI, yt-dlp, ffmpeg, Rich | Completed |
+| **006** | *To be announced* | — | — | Upcoming |
 
-*(Days 006 through 100 will be populated daily as solutions are published.)*
+*(Days 007 through 100 will be populated daily as solutions are published.)*
 
 ---
 
@@ -65,6 +66,17 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - **Obsidian Dark Mobile Web UI**: Responsive mobile receiver with 1-tap copy to phone clipboard and file previews.
   - **Bi-Directional Dropzone**: Upload photos or files from phone camera directly into `~/Downloads/clipshare/` on the PC.
   - **Ephemeral & Auto-Shutdown**: Automatic server termination after transfer or 120s timeout. Zero cloud servers.
+
+### Day 5: [Universal Social Post & Media Downloader TUI (`omniget`)](https://github.com/aotlover9-base-eth/omniget)
+- **Problem**: Downloading content from social media platforms (YouTube, X, Instagram, Reddit, Facebook) is filled with adware-ridden websites, popups, aggressive video compression, stripped captions, and broken audio tracks (e.g. separated Reddit video streams).
+- **Solution**: A peak-interactive terminal console (TUI) with mouse support and CLI that auto-detects platforms and downloads best-quality video (up to 4K), audio (HQ MP3), photo galleries, and post captions 100% locally.
+- **Key Features**:
+  - **Peak Interactive Terminal UI**: Full mouse support, platform chooser buttons, post preview cards, and live download progress bars (MB/s, ETA).
+  - **Universal Platform Support**: Native support for YouTube (Shorts & 4K), X/Twitter (videos & galleries), Instagram (Reels & carousels), Reddit (auto-merged video/audio), and Facebook.
+  - **Multi-Asset Extraction**: Choose between Best Video (MP4), Audio Only (MP3), Image Galleries, Caption/Notes (Markdown), or a Full Archive Bundle.
+  - **1-Click Clipboard Integration**: Paste links directly from Wayland/X11 clipboard and copy post captions instantly.
+  - **Download History & Library**: Browse recent downloads inside the TUI with 1-click open in default player or folder.
+  - **Zero External Scraping Cloud**: 100% local extraction using `yt-dlp` and `ffmpeg`. Zero API subscriptions or tracking.
 
 ---
 
