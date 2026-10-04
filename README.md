@@ -68,14 +68,16 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - **Ephemeral & Auto-Shutdown**: Automatic server termination after transfer or 120s timeout. Zero cloud servers.
 
 ### Day 5: [Universal Social Post & Media Downloader TUI (`omniget`)](https://github.com/aotlover9-base-eth/omniget)
-- **Problem**: Downloading content from social media platforms (YouTube, X, Instagram, Reddit, Facebook) is filled with adware-ridden websites, popups, aggressive video compression, stripped captions, and broken audio tracks (e.g. separated Reddit video streams).
-- **Solution**: A peak-interactive terminal console (TUI) with mouse support and CLI that auto-detects platforms and downloads best-quality video (up to 4K), audio (HQ MP3), photo galleries, and post captions 100% locally.
+- **Problem**: Downloading content from social media platforms (YouTube, X, Instagram, Reddit, Facebook) is filled with adware-ridden websites, popups, aggressive video compression, stripped captions, broken audio tracks, and messy disorganized file clutter.
+- **Solution**: A peak-interactive terminal user interface (Rich TUI) and CLI that auto-detects platforms, organizes downloads into dedicated platform subfolders, uses clean sequential bundle naming, and downloads best-quality video (up to 4K), audio (HQ MP3), photo galleries, and post captions 100% locally.
 - **Key Features**:
-  - **Video Quality Resolution Picker**: Choose exact video quality (1080p Full HD, 720p HD, 480p, 360p, or best available) via interactive prompt or CLI flag (`-q / --quality`).
+  - **Platform-Dedicated Folders**: Zero clutter — downloads route automatically into separate subfolders (`x/`, `youtube/`, `reddit/`, `instagram/`, `facebook/`).
+  - **Clean Sequential Naming**: Folders and ZIP archives are cleanly formatted (`tweet 1.zip`, `tweet 2.zip`, `youtube 1.zip`, etc.) instead of messy 200-character social media titles.
   - **Bundle Everything (.zip) Archive**: 1-click downloads video, extracted audio MP3, uncompressed gallery photos, caption (`.md` & `.txt`), and `metadata.json` into a single organized ZIP archive.
+  - **Video Quality Resolution Picker**: Choose exact video quality (1080p Full HD, 720p HD, 480p, 360p, or best available) via interactive prompt or CLI flag (`-q / --quality`).
   - **Uncompressed Photo Galleries**: Upgrades Twitter images to `name=orig` and YouTube thumbnails to `maxresdefault.jpg` without artificial image caps.
-  - **Multi-Tier Robust Fallbacks**: Integrated FxTwitter and Reddit OEmbed engines ensure photo-only posts never fail or crash.
-  - **Peak Interactive Terminal UI**: Full mouse support, platform chooser buttons, post preview cards, and live download progress telemetry (speed, MB/s, ETA).
+  - **Multi-Tier Robust Fallbacks**: Integrated FxTwitter and Reddit API fallbacks ensure image, video, and text posts download without failure.
+  - **Peak Interactive Terminal TUI**: Clipboard auto-detection, live byte download telemetry, speed (MB/s), ETA, and post inspection cards.
   - **100% Local & Free**: Powered by native `yt-dlp` and `ffmpeg`. Zero cloud relays, zero API subscriptions, zero tracking.
 
 ---
