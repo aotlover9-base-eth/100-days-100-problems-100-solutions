@@ -71,12 +71,12 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 - **Problem**: Downloading content from social media platforms (YouTube, X, Instagram, Reddit, Facebook) is filled with adware-ridden websites, popups, aggressive video compression, stripped captions, and broken audio tracks (e.g. separated Reddit video streams).
 - **Solution**: A peak-interactive terminal console (TUI) with mouse support and CLI that auto-detects platforms and downloads best-quality video (up to 4K), audio (HQ MP3), photo galleries, and post captions 100% locally.
 - **Key Features**:
-  - **Peak Interactive Terminal UI**: Full mouse support, platform chooser buttons, post preview cards, and live download progress bars (MB/s, ETA).
-  - **Universal Platform Support**: Native support for YouTube (Shorts & 4K), X/Twitter (videos & galleries), Instagram (Reels & carousels), Reddit (auto-merged video/audio), and Facebook.
-  - **Multi-Asset Extraction**: Choose between Best Video (MP4), Audio Only (MP3), Image Galleries, Caption/Notes (Markdown), or a Full Archive Bundle.
-  - **1-Click Clipboard Integration**: Paste links directly from Wayland/X11 clipboard and copy post captions instantly.
-  - **Download History & Library**: Browse recent downloads inside the TUI with 1-click open in default player or folder.
-  - **Zero External Scraping Cloud**: 100% local extraction using `yt-dlp` and `ffmpeg`. Zero API subscriptions or tracking.
+  - **Video Quality Resolution Picker**: Choose exact video quality (1080p Full HD, 720p HD, 480p, 360p, or best available) via interactive prompt or CLI flag (`-q / --quality`).
+  - **Bundle Everything (.zip) Archive**: 1-click downloads video, extracted audio MP3, uncompressed gallery photos, caption (`.md` & `.txt`), and `metadata.json` into a single organized ZIP archive.
+  - **Uncompressed Photo Galleries**: Upgrades Twitter images to `name=orig` and YouTube thumbnails to `maxresdefault.jpg` without artificial image caps.
+  - **Multi-Tier Robust Fallbacks**: Integrated FxTwitter and Reddit OEmbed engines ensure photo-only posts never fail or crash.
+  - **Peak Interactive Terminal UI**: Full mouse support, platform chooser buttons, post preview cards, and live download progress telemetry (speed, MB/s, ETA).
+  - **100% Local & Free**: Powered by native `yt-dlp` and `ffmpeg`. Zero cloud relays, zero API subscriptions, zero tracking.
 
 ---
 
