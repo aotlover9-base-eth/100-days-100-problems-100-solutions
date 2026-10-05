@@ -22,9 +22,10 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | **003** | Bluetooth headset profile downgrades (HFP mono), orphaned audio streams & missing per-app mixer | [**pipeswitch**](https://github.com/aotlover9-base-eth/pipeswitch) | Python 3.10+, Textual TUI, PipeWire Filter-Chain DSP, WirePlumber, Rich | Completed |
 | **004** | Sharing clipboard, tokens, files, or photos between Linux and phone on local WiFi without cloud leaks | [**clipshare**](https://github.com/aotlover9-base-eth/clipshare) | Python 3.10+, qrcode, Rich, HTTP Threading Server, HTML5/CSS Mobile Web | Completed |
 | **005** | Downloading videos, audio, image galleries, and text from social posts without ad spam or compression | [**omniget**](https://github.com/aotlover9-base-eth/omniget) | Python 3.10+, Textual TUI, yt-dlp, ffmpeg, Rich | Completed |
-| **006** | *To be announced* | — | — | Upcoming |
+| **006** | Orphaned socket collisions (`EADDRINUSE`), resurrecting supervisor watchdogs & hidden Docker mappings | [**portdock**](https://github.com/aotlover9-base-eth/portdock) | Python 3.10+, psutil, Rich TUI, Docker CLI, Linux procfs | Completed |
+| **007** | *To be announced* | — | — | Upcoming |
 
-*(Days 007 through 100 will be populated daily as solutions are published.)*
+*(Days 008 through 100 will be populated daily as solutions are published.)*
 
 ---
 
@@ -78,7 +79,16 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - **Uncompressed Photo Galleries**: Upgrades Twitter images to `name=orig` and YouTube thumbnails to `maxresdefault.jpg` without artificial image caps.
   - **Multi-Tier Robust Fallbacks**: Integrated FxTwitter and Reddit API fallbacks ensure image, video, and text posts download without failure.
   - **Peak Interactive Terminal TUI**: Clipboard auto-detection, live byte download telemetry, speed (MB/s), ETA, and post inspection cards.
-  - **100% Local & Free**: Powered by native `yt-dlp` and `ffmpeg`. Zero cloud relays, zero API subscriptions, zero tracking.
+### Day 6: [Interactive Port Conflict Resolver & Ghost Process Dissector (`portdock`)](https://github.com/aotlover9-base-eth/portdock)
+- **Problem**: Developers frequently hit `EADDRINUSE` port collision errors when restarting dev servers. Standard commands like `lsof -i :PORT | kill` only terminate the child worker, prompting dev supervisors (`nodemon`, `vite`, `npm run dev`, `cargo watch`) to instantly restart on the same port, or leave orphaned ghost processes and hidden Docker containers (`docker-proxy`) occupying ports invisibly.
+- **Solution**: A high-performance terminal utility and full-screen Rich TUI dashboard engineered to inspect, diagnose, and resolve port collisions in milliseconds with supervisor hierarchy traversal, Docker container detection, and kernel socket release verification.
+- **Key Features**:
+  - **Sub-50ms Socket Kill**: Graceful `SIGTERM` with 200ms escalation to `SIGKILL` and kernel socket release verification loop.
+  - **Ghost Process Dissector (`-t, --tree`)**: Climbs the process hierarchy to terminate root supervisors and all child workers in one sweep.
+  - **Full Interactive TUI Dashboard**: Real-time terminal UI with memory RSS, CPU %, uptime, bind scopes (`LOCAL` vs `PUBLIC`), and quick-kill shortcuts (`k`, `t`, `d`).
+  - **Deep Port Inspector (`portdock <port>`)**: Inspects any port, displaying bind scope, process metadata, supervisor hierarchy, and visual worker process trees.
+  - **Docker Mapping Detection**: Identifies whether a port is held by a Docker container (`docker-proxy`) and displays container name and image.
+  - **Scriptable Automation**: Includes `portdock wait <port>` and `portdock list --json` for CI/CD and deployment healthchecks.
 
 ---
 
