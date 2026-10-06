@@ -22,8 +22,8 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | **003** | Bluetooth headset profile downgrades (HFP mono), orphaned audio streams & missing per-app mixer | [**pipeswitch**](https://github.com/aotlover9-base-eth/pipeswitch) | Python 3.10+, Textual TUI, PipeWire Filter-Chain DSP, WirePlumber, Rich | Completed |
 | **004** | Sharing clipboard, tokens, files, or photos between Linux and phone on local WiFi without cloud leaks | [**clipshare**](https://github.com/aotlover9-base-eth/clipshare) | Python 3.10+, qrcode, Rich, HTTP Threading Server, HTML5/CSS Mobile Web | Completed |
 | **005** | Downloading videos, audio, image galleries, and text from social posts without ad spam or compression | [**omniget**](https://github.com/aotlover9-base-eth/omniget) | Python 3.10+, Textual TUI, yt-dlp, ffmpeg, Rich | Completed |
-| **006** | Orphaned socket collisions (`EADDRINUSE`), resurrecting supervisor watchdogs & hidden Docker mappings | [**portdock**](https://github.com/aotlover9-base-eth/portdock) | Python 3.10+, psutil, Rich TUI, Docker CLI, Linux procfs | Completed |
-| **007** | *To be announced* | — | — | Upcoming |
+| **007** | Strict portal upload limits (<2MB), crooked mobile camera scans, and multi-doc recipe merges | [**pdfchop**](https://github.com/aotlover9-base-eth/pdfchop) | Python 3.10+, PyMuPDF, OpenCV, Pillow, ReportLab, Rich TUI | Completed |
+| **008** | *To be announced* | — | — | Upcoming |
 
 *(Days 008 through 100 will be populated daily as solutions are published.)*
 
@@ -89,6 +89,16 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - **Deep Port Inspector (`portdock <port>`)**: Inspects any port, displaying bind scope, process metadata, supervisor hierarchy, and visual worker process trees.
   - **Docker Mapping Detection**: Identifies whether a port is held by a Docker container (`docker-proxy`) and displays container name and image.
   - **Scriptable Automation**: Includes `portdock wait <port>` and `portdock list --json` for CI/CD and deployment healthchecks.
+
+### Day 7: [Overkilled Offline PDF Swiss-Army Workstation (`pdfchop`)](https://github.com/aotlover9-base-eth/pdfchop)
+- **Problem**: Submission portals, job applications, and college forms enforce strict file size limits (<2MB or <500KB), while camera photos of documents have uneven shadows and crooked angles. Free online tools (iLovePDF, SmallPDF) upload private documents to third-party cloud servers, watermark files, or enforce daily limits.
+- **Solution**: A 100% offline, local PDF workstation with an interactive zero-flicker TUI featuring live 24-bit Truecolor Unicode half-block page previews, adaptive target-size byte compression, OpenCV auto-deskew, and page recipe stitching.
+- **Key Features**:
+  - **Smart Target-Size Compressor**: Exact byte budget guarantees (`pdfchop compress file.pdf --max 2MB`) with multi-stage adaptive downsampling and binary-search quantization.
+  - **Live Half-Block TUI Preview**: Renders real-time visual page thumbnails at 60fps directly in the terminal window without opening external viewers.
+  - **OpenCV Scan Rescuer**: Auto-deskew angle correction and illumination estimation to flatten mobile camera shadows and binarize pages.
+  - **Recipe Stitcher & TOC**: Merges documents with page slices (`doc1.pdf:1-5 doc2.pdf:10-15`) and auto-generates unified PDF bookmarks outline.
+  - **Security & Privacy Studio**: AES-256 encryption, password unlocking, and comprehensive metadata/XMP sanitization.
 
 ---
 
