@@ -22,6 +22,7 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | **003** | Bluetooth headset profile downgrades (HFP mono), orphaned audio streams & missing per-app mixer | [**pipeswitch**](https://github.com/aotlover9-base-eth/pipeswitch) | Python 3.10+, Textual TUI, PipeWire Filter-Chain DSP, WirePlumber, Rich | Completed |
 | **004** | Sharing clipboard, tokens, files, or photos between Linux and phone on local WiFi without cloud leaks | [**clipshare**](https://github.com/aotlover9-base-eth/clipshare) | Python 3.10+, qrcode, Rich, HTTP Threading Server, HTML5/CSS Mobile Web | Completed |
 | **005** | Downloading videos, audio, image galleries, and text from social posts without ad spam or compression | [**omniget**](https://github.com/aotlover9-base-eth/omniget) | Python 3.10+, Textual TUI, yt-dlp, ffmpeg, Rich | Completed |
+| **006** | Zombie dev servers auto-restarting, TIME_WAIT socket locks, and hidden docker-proxy collisions | [**portdock**](https://github.com/aotlover9-base-eth/portdock) | Python 3.10+, Rich TUI, psutil, Linux /proc, POSIX Signals | Completed |
 | **007** | Strict portal upload limits (<2MB), crooked mobile camera scans, and multi-doc recipe merges | [**pdfchop**](https://github.com/aotlover9-base-eth/pdfchop) | Python 3.10+, PyMuPDF, OpenCV, Pillow, ReportLab, Rich TUI | Completed |
 | **008** | *To be announced* | — | — | Upcoming |
 
