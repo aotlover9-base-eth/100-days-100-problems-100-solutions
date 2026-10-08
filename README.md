@@ -24,9 +24,10 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
 | **005** | Downloading videos, audio, image galleries, and text from social posts without ad spam or compression | [**omniget**](https://github.com/aotlover9-base-eth/omniget) | Python 3.10+, Textual TUI, yt-dlp, ffmpeg, Rich | Completed |
 | **006** | Zombie dev servers auto-restarting, TIME_WAIT socket locks, and hidden docker-proxy collisions | [**portdock**](https://github.com/aotlover9-base-eth/portdock) | Python 3.10+, Rich TUI, psutil, Linux /proc, POSIX Signals | Completed |
 | **007** | Strict portal upload limits (<2MB), crooked mobile camera scans, and multi-doc recipe merges | [**pdfchop**](https://github.com/aotlover9-base-eth/pdfchop) | Python 3.10+, PyMuPDF, OpenCV, Pillow, ReportLab, Rich TUI | Completed |
-| **008** | *To be announced* | — | — | Upcoming |
+| **008** | Rigid calendar bloat, missing 24-hr day allocation awareness, and all-or-nothing reminder alarms | [**hyperchunk**](https://github.com/aotlover9-base-eth/hyperchunk) | Kotlin, Jetpack Compose, Material 3, Android SDK 35, AppWidgetProvider | Completed |
+| **009** | *To be announced* | — | — | Upcoming |
 
-*(Days 008 through 100 will be populated daily as solutions are published.)*
+*(Days 009 through 100 will be populated daily as solutions are published.)*
 
 ---
 
@@ -100,6 +101,18 @@ A challenge to build 100 practical software utilities in 100 days. Each project 
   - **OpenCV Scan Rescuer**: Auto-deskew angle correction and illumination estimation to flatten mobile camera shadows and binarize pages.
   - **Recipe Stitcher & TOC**: Merges documents with page slices (`doc1.pdf:1-5 doc2.pdf:10-15`) and auto-generates unified PDF bookmarks outline.
   - **Security & Privacy Studio**: AES-256 encryption, password unlocking, and comprehensive metadata/XMP sanitization.
+
+### Day 8: [HyperOS 3 Native 24-Hour Day Planner & Homescreen Widget (`hyperchunk`)](https://github.com/aotlover9-base-eth/hyperchunk)
+- **Problem**: Setting up a structured daily routine in traditional calendar apps (Google Calendar, Notion) requires creating 15 disconnected events with tedious date pickers, while failing to provide an instant visual overview of how your full 24-hour day is divided across sleep, routines, deep work, lectures, and rest.
+- **Solution**: A minimal, 100% native Kotlin Android application built specifically with Xiaomi HyperOS 3 design aesthetics (ultra-rounded 32dp squircles, frosted glass panels, buttery spring physics, and zero boxy rectangles). Features an interactive clock wheel drum picker, selective exact alarms, and a native homescreen widget.
+- **Key Features**:
+  - **24-Hour Time-Chunking System**: Divide 00:00 to 24:00 into intuitive focus blocks with auto-duration formatting and overlap awareness.
+  - **HyperOS 3 Design Language**: Custom squircle surfaces, velvet dark canvas, pill badges, and fluid spring animations throughout all sheets, tabs, and modals.
+  - **Interactive Clock Wheel Picker**: Smooth vertical drum scroll for hours (`00-23`) and minutes (`00-59`) with haptic snapping and center magnification.
+  - **Selective Exact Alarms**: Per-task alarm toggling—ring sound & vibration for college lectures, hydration, or gym, while keeping rest periods completely silent.
+  - **Native Homescreen Widget**: HyperOS 3 rounded card with live active task title, countdown timer ("45m left"), real-time progress bar, and up-next preview.
+  - **Day-of-Week Presets**: Independent routines for Monday through Sunday with 1-tap day schedule duplication.
+  - **24-Hour Visual Ribbon**: Live proportional color gauge tracking day allocation with a real-time moving indicator needle.
 
 ---
 
